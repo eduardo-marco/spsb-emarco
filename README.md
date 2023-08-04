@@ -15,4 +15,4 @@ Lastly, in the few cases where we can have no winner, I just returned an empty a
 
 Warning on PHPUnit:
 
-For the last test, there are 2 warnings showns since $arrayKeys[1] doesn't exist, so I added an alternate commented code that would not trigger those and pass the code without a warning, but I don't think it's necessary unless the workflow and pipelines demmand that, as for how PHP works internally, it would never cause a crash or a server error.
+For the last test, there are 2 warnings showns since $arrayKeys[1] doesn't exist, so I added an alternate commented code that would not trigger those and pass the code without a warning, but I don't think it's necessary unless the workflow and pipelines demand that, as for how PHP works internally, it would never cause a crash or a server error.
