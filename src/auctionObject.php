@@ -10,12 +10,12 @@ class auctionObject
     {
         $this->setReservePrice($reservePrice);
     }
-    public function getReservePrice()
+    public function getReservePrice() : ?int
     {
         return $this->reservePrice;
     }
 
-    public function setReservePrice($reservePrice)
+    public function setReservePrice(?int $reservePrice)
     {
         $this->reservePrice = $reservePrice;
     }

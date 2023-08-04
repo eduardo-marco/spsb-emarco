@@ -1,0 +1,1 @@
+{"version":1,"defects":{"auctionResultTest::testProposed":8,"auctionResultTest::testOneBidderAboveReserve":8,"auctionResultTest::testNoBids":8,"auctionResultTest::testOneBidder":8},"times":{"auctionResultTest::testProposed":0.004,"auctionResultTest::testOneBidderAboveReserve":0,"auctionResultTest::testNoBids":0,"auctionResultTest::testOneBidder":0}}

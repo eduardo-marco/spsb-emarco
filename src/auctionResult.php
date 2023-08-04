@@ -6,26 +6,26 @@ class auctionResult
     private $winnerName;
     private $winningPrice;
 
-    public function __construct($winnerName = null, $winningPrice = null)
+    public function __construct(string $winnerName = null, int $winningPrice = null)
     {
         $this->setWinnerName($winnerName);
         $this->setWinningPrice($winningPrice);
     }
-    public function getWinnerName()
+    public function getWinnerName() : ?string
     {
         return $this->winnerName;
     }
 
-    public function setWinnerName($winnerName)
+    public function setWinnerName(?string $winnerName)
     {
         $this->winnerName = $winnerName;
     }
-    public function getWinningPrice()
+    public function getWinningPrice() : ?int
     {
         return $this->winningPrice;
     }
 
-    public function setWinningPrice($winningPrice)
+    public function setWinningPrice(?int $winningPrice)
     {
         $this->winningPrice = $winningPrice;
     }

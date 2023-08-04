@@ -11,27 +11,27 @@ class auctionParticipant
         $this->setName($name);
         $this->setBids($bids);
     }
-    public function getName()
+    public function getName() : ?string
     {
         return $this->name;
     }
 
-    public function setName($name)
+    public function setName(?string $name) 
     {
         $this->name = $name;
     }
-    public function getBids()
+    public function getBids() : ?array
     {
         return $this->bids;
     }
 
-    public function setBids($bids)
+    public function setBids(?array $bids)
     {
         $this->bids = $bids;
     }
-    public function addBid($bids)
+    public function addBid(?int $bid)
     {
-        $this->bids[] = $bids;
+        $this->bids[] = $bid;
     }
 
 }

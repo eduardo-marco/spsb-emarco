@@ -4,9 +4,9 @@ namespace Auction;
 
 use Auction\auctionResult;
 
-class auctionAlgorithm
+final class auctionAlgorithm
 {
-    function decideResult($auctionObject, $auctionParticipant)
+    function decideResult($auctionObject, $auctionParticipant) : auctionResult
     {
         $reservePrice = $auctionObject->getReservePrice();
         $auctionResult = new auctionResult();
