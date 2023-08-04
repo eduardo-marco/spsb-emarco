@@ -1,4 +1,6 @@
 <?php
+namespace Auction;
+
 class auctionResult
 {
     private $winnerName;

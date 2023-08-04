@@ -1,5 +1,7 @@
 <?php
-class auctionReuslt
+namespace Auction;
+
+class auctionParticipant
 {
     private $name;
     private $bids;
