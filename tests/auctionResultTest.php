@@ -21,7 +21,7 @@ class auctionResultTest extends TestCase
         $participantE = new auctionParticipant("E", array(132, 135, 140));
         $participantsArray = array($participantA, $participantB, $participantC, $participantD, $participantE);
         $expectedResult = new auctionResult("E", 130);
-        $proposedTestResult = $algorithm->decideResult($object, $participantsArray);
+        $proposedTestResult = $algorithm->__invoke($object, $participantsArray);
 
         $this->assertEquals($expectedResult, $proposedTestResult);
 
@@ -39,7 +39,7 @@ class auctionResultTest extends TestCase
         $participantE = new auctionParticipant("E", array(12, 35, 40));
         $participantsArray = array($participantA, $participantB, $participantC, $participantD, $participantE);
         $expectedResult = new auctionResult("A", 100);
-        $proposedTestResult = $algorithm->decideResult($object, $participantsArray);
+        $proposedTestResult = $algorithm->__invoke($object, $participantsArray);
         $this->assertEquals($expectedResult, $proposedTestResult);
 
     }
@@ -56,7 +56,7 @@ class auctionResultTest extends TestCase
         $participantE = new auctionParticipant("E");
         $participantsArray = array($participantA, $participantB, $participantC, $participantD, $participantE);
         $expectedResult = new auctionResult();
-        $proposedTestResult = $algorithm->decideResult($object, $participantsArray);
+        $proposedTestResult = $algorithm->__invoke($object, $participantsArray);
 
         $this->assertEquals($expectedResult, $proposedTestResult);
 
@@ -74,7 +74,7 @@ class auctionResultTest extends TestCase
         $participantE = new auctionParticipant("E");
         $participantsArray = array($participantA, $participantB, $participantC, $participantD, $participantE);
         $expectedResult = new auctionResult("C", 100);
-        $proposedTestResult = $algorithm->decideResult($object, $participantsArray);
+        $proposedTestResult = $algorithm->__invoke($object, $participantsArray);
 
         $this->assertEquals($expectedResult, $proposedTestResult);
 
