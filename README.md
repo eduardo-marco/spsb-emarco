@@ -9,8 +9,10 @@ I have sliced the code in smaller methods in order to make it easier to develop 
 
 Solution explanation:
 
-For the last test, there are 2 warnings showns since $arrayKeys[1] doesn't exist, so I added an alternate commented code that would not trigger those, but I don't think it's necessary unless we want to have a 100% warning free code, as for how PHP works internally, it won't fail checking the conditions.
-
 As for the resolution of the problem, since it doesn't say we need to store any data and it just asks us to resolve who's the winner and how much he is paying, I resorted to doing it on a more simple way, just keeping the highest bid of each participant, putting it on a descendant order. This will always guarantee that the first one in the list is the winner, and that the price will either be the second bidder or the reserve price, depending on which one is higher.
 
 Lastly, in the few cases where we can have no winner, I just returned an empty auctionResult object, which would simbolize that there is no winner in that scenario.
+
+Warning on PHPUnit:
+
+For the last test, there are 2 warnings showns since $arrayKeys[1] doesn't exist, so I added an alternate commented code that would not trigger those and pass the code without a warning, but I don't think it's necessary unless the workflow and pipelines demmand that, as for how PHP works internally, it would never cause a crash or a server error.
